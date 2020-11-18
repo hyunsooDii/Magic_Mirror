@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00001E"
+    android:backgroundTint="#00001E"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageBtn1"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerInside"
+        android:onClick="onClickButton"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lightbulb" />
+
+    <ImageButton
+        android:id="@+id/imageBtn2"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="40dp"
+        android:scaleType="centerInside"
+        android:onClick="onClickButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/exhaust" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
